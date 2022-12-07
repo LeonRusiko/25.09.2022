@@ -1,9 +1,21 @@
-let myMath = {
-  "+" : function(a,b){ return a+b },
-  "-" : function(a,b){ return a-b },
-  "*" : function(a,b){ return a*b },
-  "/" : function(a,b){ return a/b },
-  "calc": function(a, b, op){ return this[op](a,b) }
-}
+let a =prompt()
+let b =prompt()
+let c =prompt('+,-,*,/')
 
-document.getElementById("out").innerText = myMath.calc(5, 6, "+");
+function calc(){
+    if (c === '-'){
+        alert(+a - +b)
+    }
+    else if (c === '*'){
+        alert(+a * +b)
+    }
+    else if (c === '/'){
+        alert(+a * +b)
+    }
+    else if (c === '+'){
+        alert(+a + +b)
+    }
+    else {
+        alert('null')
+    }
+}
